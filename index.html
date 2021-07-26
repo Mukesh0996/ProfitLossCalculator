@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Loss Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="main">
+        <h1>Stock Profit Loss Calculator</h1>
+        <form class="profitForm">
+            <div class="form-control">
+                <input type="text" name="CP" id="cp" placeholder=" "/>
+                <label for="cp" >Enter Cost Price.</label>
+            </div>
+            <div class="form-control">
+                <input type="text" name="SP" id="sp" placeholder=" "/>
+                <label for="sp" >Enter Selling Price.</label>
+            </div>
+            <div class="form-control">
+                <input type="text" name="quantity" id="q" placeholder=" "/>
+                <label for="q" >Enter The Quantity.</label>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div class="output"></div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
