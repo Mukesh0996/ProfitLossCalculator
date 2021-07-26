@@ -110,6 +110,36 @@ button[type='submit']:hover {
     border-radius: 5px;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background:#D1D5DB;
+    font: inherit;
+}
+
+.footer_header {
+    color: #6B7280;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.footer-list {
+    text-align: center;
+    margin-top: 1rem;
+}
+.footer-list_item {
+    display: inline-block;
+    padding: 0 .5rem;
+    margin: .5rem;
+}
+i {
+    font-size: 2rem;
+    color: #6B7280;
+}
+i:hover {
+    color: #646b77;
+}
 @media (max-width: 41rem) {
     .main {
         width: 100vw;

@@ -14,6 +14,8 @@ submitBtn.addEventListener('click', (e) => {
 
     // reseting the errors
     errors.forEach(error => error.innerText = "");
+    main.classList.remove('highProfit');
+    main.classList.remove('highLoss');
 
     if(isNaN(cp) || cp<1) {
         errors[0].innerText = "Please enter a valid number for cost price. Cost Price should be greater than 0";
@@ -38,10 +40,10 @@ submitBtn.addEventListener('click', (e) => {
         output.style.display = "block";
         output.innerText = `Wohoo, your profit is INR ${profit.toFixed(2)} and the profit % is ${profitPercentage.toFixed(2)}`
     } //loss
-    else if (cp > sp) {
+    else if (cp >= sp) {
         const loss = (cp-sp) * quantity;
         const lossPercentage = (loss/cp) * 100;
-        if(lossPercentage > 50) {
+        if(lossPercentage >= 50) {
             main.classList.add('highLoss');
         }
         output.style.display = "block";
